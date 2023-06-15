@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://kit.fontawesome.com/ddac99b4fd.js" crossorigin="anonymous"></script>
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <title>Golden Lotus Resort</title>
+</head>
+<body>
+  <div class="lod">
+    <div class="spinner-border text-black load" role="status">
+    </div>
+    <script>
+      $(window).on("load",function(){
+          $(".lod").fadeOut("slow");
+      });
+    </script>
+  </div>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+      <a class="navbar-brand" href="#">Golden Lotus</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Prices</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Rooms
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#room">Bedroom</a></li>
+              <li><a class="dropdown-item" href="#kitchen">Kitchen</a></li>
+              <li><a class="dropdown-item" href="#pool">Pool</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex btns" role="search">
+          <button class="btn btn-outline-secondary" type="submit">Book Now</button>
+        </form>
+      </div>
+  </div>
+  </nav>
+  <div class="title">
+        <div class="outlined container-sm">
+            <div>
+                <p class="display-1" id="dis">Golden Lotus Resort</p>
+                <div id="hr"></div>
+                <p class="display-3" id="dis2">Embrace Pure Luxury</p>
+            </div>
+        </div>
+  </div>
+  <div class="room" id="room">
+        <div class="main-info">
+            <div class="info">
+                <div class="photo-div"></div>
+                <p class="display-4">Luxury Bedroom</p>
+                <p class="display-5">Immerse yourself in the epitome of luxury and unparalleled comfort with our opulent rooms adorned in lavish decor, featuring exquisite amenities and personalized service.</p>
+            </div>
+        </div>
+        <div class="phot"></div>
+  </div>
+  <div class="room kitchen" id="kitchen">
+        <div class="phot"></div>
+        <div class="main-info">
+            <div class="info">
+                <div class="photo-div"></div>
+                <p class="display-4">Luxury Kitchen</p>
+                <p class="display-5">Experience culinary bliss in our state-of-the-art luxury kitchen, meticulously designed with high-end appliances, elegant finishes, and impeccable attention to detail.</p>
+            </div>
+        </div>
+  </div>
+  <div class="room pool" id="pool">
+      <div class="phot"></div>
+      <div class="main-info">
+          <div class="info">
+              <div class="photo-div"></div>
+              <p class="display-4">Luxury Pool</p>
+              <p class="display-5">Dive into pure indulgence in our breathtaking luxury pool, a shimmering oasis of serenity offering pristine waters, panoramic views, and unparalleled relaxation.</p>
+          </div>
+      </div>
+  </div>
+  <div class="about container-sm">
+    <div>
+      <p class="display-5">About Us</p>
+      <p class="display-2">Since 2015</p>
+      <p>Ut condimentum magna ut augue elementum ornare. Fusce posuere massa vitae maximus posuere. Mauris sagittis consectetur vulputate. Curabitur commodo est quis felis porttitor eleifend. Sed efficitur sem mi, et feugiat lorem scelerisque awesome hotel booking website for you.</p>
+    </div>
+    <div class="photo-xd"></div>
+    <div class="featur">
+      <div class="top-fe">
+        <div class="fe">
+          <div class="fe-left"><i class="fa-solid fa-location-dot"></i></div>
+          <div class="fe-right">
+            <h4>Best Location</h4>
+            <p>Lorem ipsum dolor sit amet consec adipiscing elit, sed do eiusmod an tempor incididunt</p>
+          </div>
+        </div>
+        <div class="fe">
+          <div class="fe-left"><i class="fa-solid fa-star"></i></div>
+          <div class="fe-right">
+            <h4>High Rating</h4>
+            <p>Lorem ipsum dolor sit amet consec adipiscing elit, sed do eiusmod an tempor incididunt</p>
+          </div>
+        </div>
+        <div class="fe">
+          <div class="fe-left"><i class="fa-solid fa-clock"></i></div>
+          <div class="fe-right">
+            <h4>Quit Hours</h4>
+            <p>Lorem ipsum dolor sit amet consec adipiscing elit, sed do eiusmod an tempor incididunt</p>
+          </div>
+        </div>
+      </div>
+      <div class="top-fe">
+        <div class="fe">
+          <div class="fe-left"><i class="fa-solid fa-calendar"></i></div>
+          <div class="fe-right">
+            <h4>Free Cancellation</h4>
+            <p>Lorem ipsum dolor sit amet consec adipiscing elit, sed do eiusmod an tempor incididunt</p>
+          </div>
+        </div>
+        <div class="fe">
+          <div class="fe-left"><i class="fa-solid fa-credit-card"></i></div>
+          <div class="fe-right">
+            <h4>Payment Options</h4>
+            <p>Lorem ipsum dolor sit amet consec adipiscing elit, sed do eiusmod an tempor incididunt</p>
+          </div>
+        </div>
+        <div class="fe">
+          <div class="fe-left"><i class="fa-solid fa-gift"></i></div>
+          <div class="fe-right">
+            <h4>Special Offers</h4>
+            <p>Lorem ipsum dolor sit amet consec adipiscing elit, sed do eiusmod an tempor incididunt</p>
+          </div>
+        </div>
+      </div>
+    </div>
+ </div>
+ <div class="container-fluid fo">
+  <footer>
+    <div class="final-div">
+        <p id="foot-head" class="display-6">Lulini Web Development</p>
+        <p class="lead">
+            Lulini Development Group: Crafting captivating websites with cutting-edge technology and stunning design, tailored to your business needs. Trust us for your online presence.</p>
+        
+    </div>
+    <div id="hr"></div>
+    <div class="bottom-foot">
+        <p class="lead">Copyright @2023 <a href="#">LuliniDevelopment</a></p>
+        <p id="creator" class="lead">Created By <a href="https://www.facebook.com/profile.php?id=100088419544165" target="_blank">Luka Tskhvaradze</a></p>
+        <ul>
+            <li><a href="./index.html" class="lead">Home</a></li>
+            <li><a href="./Book.html" class="lead">Prices</a></li>
+            <li><a href="./Service.html" class="lead">About</a></li>
+            <li><a href="./contact.html" class="lead">Contact</a></li>
+        </ul>
+    </div>
+  </footer>
+  
+ </div>
+</body>
+</html>

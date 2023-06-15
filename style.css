@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@700&display=swap');
+.btn-outline-secondary{
+    border: black 1px solid;  
+}
+.btn-outline-secondary:hover{
+    color: white;
+    background-color: black;
+}
+.navbar{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+}
+.title{
+    padding-top: 50px;
+    width: 100%;
+    height: 900px;
+    background-image: url('/images/Untitled\ design.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.outlined{
+    height: 50%;
+    background-color: transparent;
+    border: 5px solid white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.outlined div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.outlined #dis{
+    color: white;
+    font-family: s;
+    font-size: 140px;
+}
+#hr{
+    width: 400px;
+    height: 5px;
+    background-color: white;
+}
+.outlined #dis2{
+    color: white;
+    font-size: 110px;
+}
+@media (max-width: 1400px){
+    .outlined{
+        height: 40%;
+    }
+    .outlined #dis{
+        font-size: 120px;
+    }
+    .outlined #dis2{
+        font-size: 80px;
+    }
+}
+@media (max-width: 1200px){
+    .title{
+        justify-content: center;
+        align-items: center;
+    }
+    .outlined #dis{
+        font-size: 100px;
+    }
+    .outlined #dis2{
+        font-size: 60px;
+    }
+}
+@media (max-width: 992px){
+    .outlined #dis{
+        font-size: 80px;
+    }
+    .outlined #dis2{
+        font-size: 50px;
+    }
+}
+@media (max-width: 770px){
+    .title{
+        height: 500px;
+    }
+    .outlined #dis{
+        font-size: 60px;
+    }
+    .outlined #dis2{
+        font-size: 40px;
+    }
+    #hr{
+        width: 280px;
+    }
+}
+@media (max-width: 540px){
+    .outlined{
+        border: none;
+    }
+    .outlined div{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 30px;
+    }
+    .outlined #dis{
+        font-size: 50px;
+    }
+    .outlined #dis2{
+        font-size: 40px;
+    }
+    #hr{
+        width: 280px;
+    }
+}
+@media (max-width: 440px){
+    .outlined #dis{
+        font-size: 40px;
+    }
+    .outlined #dis2{
+        font-size: 25px;
+    }
+    #hr{
+        width: 280px;
+    }
+}
+.room{
+    width: 100%;
+    height: 700px;
+    background-color:antiquewhite;
+    display: flex;
+}
+.main-info{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.phot{
+    width: 50%;
+    height: 100%;
+    background-image: url('/images/photo3.jpg');
+}
+.room .info{
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+.photo-div{
+    width: 100%;
+    height: 315px;
+    background-image: url('/images/photo2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.info .display-4{
+    font-size: 44px;
+}
+.info .display-5{
+    font-size: 35px;
+    color: rgb(88, 88, 88);
+}
+@media (max-width:1080px){
+    .room{
+        flex-direction: column;
+        height: 1100px;
+    }
+    .main-info{
+        width: 100%;
+    }
+    .phot{
+        width: 100%;
+    }
+}
+@media (max-width:520px){
+  .main-info .info p{
+    margin-left: 10px;
+  }
+  .phot{
+    background-size: cover;
+  }
+}
+.kitchen .phot{
+    background-image: url('/images/photo4.jpg');
+}
+.kitchen .photo-div{
+    background-image: url('/images/photo5.jpg');
+}
+.pool .phot{
+    background-image: url('/images/photo6.jpg');
+}
+.pool .phot{
+    order: 1;
+}
+.pool .photo-div{
+    background-image: url('/images/pool.jpg');
+}
+.kitchen .info{
+    text-align: end;
+}
+@media (max-width:1080px){
+    .main-info{
+        padding-top: 30px;
+    }
+    .kitchen .info{
+        text-align: start;
+    }
+    .kitchen .phot{
+        order: 1;
+    }
+}
+@media (max-width: 400px){
+    .info .display-5{
+        font-size: 25px;
+    }
+}
+.btns button{
+    color: black;
+}
+.about{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.about p:nth-child(3){
+    font-size: 20px;
+}
+.photo-xd{
+    width: 100%;
+    height: 600px;
+    background-image: url('/images/modern2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.featur{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.featur i{
+    font-size: 30px;
+}
+.top-fe{
+    display: flex;
+    gap: 10px;
+}
+.fe{
+    box-sizing: border-box;
+    
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    gap: 10px;
+    flex: 1;
+    transition: 0.25s;
+    background-position: center;
+    background-image: url('/images/whiteeeeeee.jpg');
+    background-size: cover;
+}
+.fe:hover{
+    background-image: url('/images/photo4.jpg');
+    color: white;
+}
+.fe-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: start;
+}
+@media (max-width: 768px){
+    .top-fe{
+        flex-direction: column;
+    }
+}
+.fo{
+    background-color: #191C1B;
+    color: white;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+footer #hr{
+    width: 100%;
+    height: 2px;
+    background-color: white;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+footer ul{
+    list-style-type: none;
+}
+.final-div{
+    margin-top: 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.bottom-foot{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+}
+.bottom-foot ul{
+    display: flex;
+    gap: 10px;
+}
+.bottom-foot a{
+    transition: 0.25s;
+    padding-bottom: 2px;
+}
+.bottom-foot a:hover{
+    border-bottom: 1px solid white;
+}
+@media (max-width: 860px){
+    .bottom-foot{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-bottom: 10px;
+    }
+    .bottom-foot ul{
+        margin: 0;
+        padding: 0;
+    }
+}
+.lod{
+    z-index: 2;
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.load{
+    width: 100px;
+    height: 100px;
+}
