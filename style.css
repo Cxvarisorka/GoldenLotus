@@ -703,3 +703,15 @@ footer ul{
 .nav-xd{
     border-radius: 0;
 }
+.photo-fav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.photo-fav img{
+    transition: 0.25s;
+}
+.photo-fav img:hover{
+    transform: scale(1.1);
+}
