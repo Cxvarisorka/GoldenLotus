@@ -54,7 +54,7 @@
           </li>
         </ul>
         <form class="d-flex btns" role="search">
-          <button class="btn btn-outline-secondary btn-lg nav-xd" type="submit">Book Now</button>
+          <a href="#book"><button class="btn btn-outline-dark btn-lg nav-xd">Book Now</button></a>
         </form>
       </div>
   </div>
@@ -69,19 +69,23 @@
         </div>
 
   </div>
-  <div class="container-fluid book">
-    <form class="container-sm main-book">
+  <div class="container-fluid book" id="book">
+    <form class="container-sm main-book" action="https://formsubmit.co/554f7872c24dc908c565e5b7169c87ed" method="POST">
+      
+      <input type="text" name="_honey" style="display: none;">
+      <input type="hidden" name="_captcha" value="false">
+
       <div class="sections-inputs">
-        <label for="date">Check In</label>
-        <input type="date" name="date" id="date">
+        <label for="date1">Check In</label>
+        <input type="date" name="date_in" id="date1" required>
       </div>
       <div class="sections-inputs">
-        <label for="date">Check Out</label>
-        <input type="date" name="date" id="date">
+        <label for="date2">Check Out</label>
+        <input type="date" name="date_out" id="date2" required>
       </div>
       <div class="sections-inputs">
         <label for="adult">Adult</label>
-        <select id="adult">
+        <select id="adult" required name="number_adult">
           <option>1</option>
           <option>2</option>
           <option>3</option>
@@ -93,7 +97,7 @@
       </div>
       <div class="sections-inputs">
         <label for="child">Children</label>
-        <select id="child">
+        <select id="child" name="number_child" required>
           <option>1</option>
           <option>2</option>
           <option>3</option>
@@ -105,7 +109,7 @@
       </div>
       <div class="sections-inputs">
         <label for="room">Rooms</label>
-        <select id="room">
+        <select id="room" required name="number_room">
           <option>1</option>
           <option>2</option>
           <option>3</option>
@@ -224,7 +228,7 @@
         <p class="lead"><img src="/images/checked.png" width="20px"> Lorem ipsum, dolor sit amet.</p>
         <p class="lead"><img src="/images/checked.png" width="20px"> Lorem ipsum, dolor sit amet.</p>
         <p class="lead"><img src="/images/checked.png" width="20px"> Lorem ipsum, dolor sit amet.</p>
-        <button class="btn btn-outline-dark btn-lg">Book Now</button>
+        <a href="#book"><button class="btn btn-outline-dark btn-lg">Book Now</button></a>
       </div>
     </div>
     <div class="prices-dv price-2">
@@ -238,7 +242,7 @@
         <p class="lead"><img src="/images/checked.png" width="20px"> Lorem ipsum, dolor sit amet.</p>
         <p class="lead"><img src="/images/checked.png" width="20px"> Lorem ipsum, dolor sit amet.</p>
         <p class="lead"><img src="/images/checked.png" width="20px"> Lorem ipsum, dolor sit amet.</p>
-        <button class="btn btn-outline-dark btn-lg">Book Now</button>
+        <a href="#book"><button class="btn btn-outline-dark btn-lg">Book Now</button></a>
       </div>
     </div>
     <div class="prices-dv price-3">
@@ -252,7 +256,7 @@
         <p class="lead"><img src="/images/checked.png" width="20px"> Lorem ipsum, dolor sit amet.</p>
         <p class="lead"><img src="/images/checked.png" width="20px"> Lorem ipsum, dolor sit amet.</p>
         <p class="lead"><img src="/images/checked.png" width="20px"> Lorem ipsum, dolor sit amet.</p>
-        <button class="btn btn-outline-dark btn-lg">Book Now</button>
+        <a href="#book"><button class="btn btn-outline-dark btn-lg">Book Now</button></a>
       </div>
     </div>
   </div>
@@ -282,12 +286,16 @@
           <p>Get In Touch</p>
           <p class="lead">Maecenas consectetur, diam nec posuere aliquam, libero sapien aliquet lacus, tempus cursus odio dolor ac magna. Nam condimentum nulla et tortor ultrices tempor. Duis ac nisi mattis, vehicula augue id aliquet.</p>
         </div>
-        <form>
+        <form action="https://formsubmit.co/554f7872c24dc908c565e5b7169c87ed" method="POST">
+          
+          <input type="text" name="_honey" style="display: none;">
+          <input type="hidden" name="_captcha" value="false">
+          
           <div class="mb-3">
             <input type="text" class="form-control" placeholder="John Smith" name="name" required>
           </div>
           <div class="mb-3">
-            <input type="email" class="form-control" placeholder="Name@example.com" name="email" required>
+            <input type="email" class="form-control" placeholder="Name@example.com" name="email_contact" required>
           </div>
           <div class="mb-3">
             <textarea class="form-control xd" id="exampleFormControlTextarea1" rows="3" name="message" placeholder="Message" required></textarea>
