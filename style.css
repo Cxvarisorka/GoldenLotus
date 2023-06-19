@@ -715,3 +715,12 @@ footer ul{
 .photo-fav img:hover{
     transform: scale(1.1);
 }
+input:focus{
+    outline: none;
+}
+select:focus{
+    outline: none;
+}
+.sections-inputs input{
+    width: 100%;
+}
