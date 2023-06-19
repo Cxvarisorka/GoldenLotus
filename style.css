@@ -724,3 +724,9 @@ select:focus{
 .sections-inputs input{
     width: 100%;
 }
+@media (max-width:500px){
+    .photo-fav img{
+        width: 150px;
+        height: 150px;
+    }
+}
