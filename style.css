@@ -1,4 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@700&display=swap');
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+}
+body::-webkit-scrollbar-track {
+    background-color: #191C1B;  
+
+}
+body::-webkit-scrollbar-thumb {
+    background-color: white; 
+}
 .btn-outline-secondary{
     border: black 1px solid;  
 }
@@ -13,6 +23,12 @@
     z-index: 1;
     width: 100%;
 }
+.navbar li{
+    font-size: 20px;
+}
+.navbar-brand{
+    font-size: 30px;
+}
 .title{
     padding-top: 50px;
     width: 100%;
@@ -22,6 +38,7 @@
     background-size: cover;
     background-position: center;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -359,9 +376,6 @@ footer ul{
     height: 100px;
 }
 @media (max-width:1082px){
-    .title{
-        
-    }
     .phot{
         display: none;
     }
@@ -375,9 +389,12 @@ footer ul{
 .prices{
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     width: 100%;
     height: 500px;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 .main-prices{
     display: flex;
@@ -477,15 +494,18 @@ footer ul{
 }
 @media (max-width: 400px){
     .main-prices{
-        gap: 40px;
+        gap: 30px;
     }
     .prices-dv{
         width: 300px;
-        height: 300px;
+        height: 400px;
+    }
+    .prices-dv:hover{
+        scale: none;
     }
     .price-2{
         width: 350px;
-        height: 350px;
+        height: 450px;
     }
     .price-1 .info-prices, .price-3 .info-prices{
         font-size: 17px;
@@ -495,23 +515,191 @@ footer ul{
         padding: 6px;
     }
 }
-@media (max-width: 370px){
-    .main-prices{
-        gap: 30px;
+.book{
+    width: 100%;
+}
+.price-header p:nth-child(1){
+    font-size: 50px;
+    font-weight: 700;
+}
+@media (max-width: 470px){
+    .price-header p:nth-child(1){
+        font-size: 40px;
     }
-    .prices-dv{
-        width: 280px;
-        height: 400px;
+    .prices{
+        margin-bottom: 30px;
     }
-    .price-2{
-        width: 300px;
-        height: 400px;
+}
+@media (max-width: 992px){
+    .price-header{
+        text-align: center;
     }
-    .price-1 .info-prices, .price-3 .info-prices{
-        font-size: 17px;
+}
+.contact{
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.main-contact{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0;
+}
+.left-contact{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.div-info{
+    width: 100%;
+}
+.div-info p:nth-child(1){
+    font-size: 25px;
+}
+.right-contact{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.right-contact form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.right-contact form input{
+    border:#191C1B 1px solid;
+    border-radius: 0;
+    background-color: transparent;
+    font-size: 20px;
+}
+.xd{
+    border:#191C1B 1px solid;
+    border-radius: 0;
+    background-color: transparent;
+    max-height: 200px;
+    font-size: 20px;
+}
+.right-contact form button{
+    width: 100%;
+    border-radius: 0px;
+}
+.right-header p:nth-child(1){
+    font-size: 25px;
+}
+.right-header{
+    display: flex;
+    flex-direction: column;
+}
+.top-contact{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+.main-contact iframe{
+    width: 100%;
+    height: 100%;
+}
+@media (max-width:992px){
+    .contact{
+        height: 100%;
     }
-    .price-1 button, .price-3 button{
-        font-size: 17px;
-        padding: 6px;
+}
+@media (max-width: 767px){
+    .top-contact{
+        height: 100%;
+        flex-direction: column;
     }
+    .left-contact{
+        width: 100%;
+    }
+    .right-contact{
+        width: 100%;
+    }
+}
+.book{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 300px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.main-book{
+    background-color:antiquewhite;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+}
+.sections-inputs{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+.sections-inputs input,button,select{
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 0;
+    background-color: transparent;
+    transition: 0.25s;
+    margin: 0;
+}
+.sections-inputs button:hover{
+    background-color: black;
+    color: white;
+}
+.sections-inputs label{
+    font-size: 25px;
+}
+@media (max-width:1200px){
+    .sections-inputs label{
+        font-size: 20px;
+    }
+    .sections-inputs{
+        width: 120px;
+    }
+    .main-book{
+        gap: 0;
+        justify-content: space-evenly;
+    }
+}
+@media (max-width: 992px){
+    .sections-inputs label{
+        font-size: 18px;
+    }
+    .sections-inputs{
+        width: 110px;
+    }
+}
+@media (max-width: 769px){
+    .book{
+        height: 100%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .main-book{
+        height: 100%;
+        flex-direction: column;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .sections-inputs{
+        width: 80%;
+    }
+}
+.nav-xd{
+    border-radius: 0;
 }
