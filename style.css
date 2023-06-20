@@ -653,6 +653,8 @@ footer ul{
 }
 .sections-inputs div:nth-child(1){
     height: 40%;
+    display: flex;
+    align-items: center;
 }
 .sections-inputs div:nth-child(2){
     height: 60%;
