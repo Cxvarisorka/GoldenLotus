@@ -636,6 +636,7 @@ footer ul{
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 .main-book{
+    width: 1500px;
     background-color:antiquewhite;
     height: 150px;
     display: flex;
@@ -648,9 +649,15 @@ footer ul{
     display: flex;
     flex-direction: column;
     width: 200px;
+    height: 100px;
+}
+.sections-inputs div:nth-child(1){
+    height: 40%;
+}
+.sections-inputs div:nth-child(2){
+    height: 60%;
 }
 .sections-inputs input,button,select{
-    padding: 10px;
     border: 1px solid black;
     border-radius: 0;
     background-color: transparent;
@@ -682,6 +689,20 @@ footer ul{
     }
     .sections-inputs{
         width: 110px;
+    }
+    .book{
+        height: 100%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .main-book{
+        height: 100%;
+        flex-direction: column;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .sections-inputs{
+        width: 80%;
     }
 }
 @media (max-width: 769px){
@@ -723,10 +744,26 @@ select:focus{
 }
 .sections-inputs input{
     width: 100%;
+    height: 100%;
+}
+.sections-inputs select{
+    width: 100%;
+    height: 100%;
+}
+.sections-inputs button{
+    width: 100%;
+    height: 100%;
 }
 @media (max-width:500px){
     .photo-fav img{
         width: 150px;
         height: 150px;
     }
+}
+input[type = 'date']{
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0;
 }

@@ -7,7 +7,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./normalize.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/ddac99b4fd.js" crossorigin="anonymous"></script>
     <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
@@ -79,16 +78,32 @@
       <input type="hidden" name="_captcha" value="false">
 
       <div class="sections-inputs">
-        <label for="date1">Check In</label>
-        <input type="date" name="date_in" id="date1" required>
+        <div><label for="date1">Check In</label></div>
+        <div><input type="date" name="date_in" id="date1" required></div>
       </div>
       <div class="sections-inputs">
-        <label for="date2">Check Out</label>
-        <input type="date" name="date_out" id="date2" required>
+        <div><label for="date2">Check Out</label></div>
+        <div><input type="date" name="date_out" id="date2" required></div>
       </div>
       <div class="sections-inputs">
-        <label for="adult">Adult</label>
-        <select id="adult" required name="number_adult">
+        <div><label for="adult">Adult</label></div>
+        <div>
+          <select id="adult" required name="number_adult">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+          </select>
+        </div>
+        
+        
+      </div>
+      <div class="sections-inputs">
+        <div><label for="child">Children</label></div>
+        <div><select id="child" name="number_child" required>
           <option>1</option>
           <option>2</option>
           <option>3</option>
@@ -96,11 +111,13 @@
           <option>5</option>
           <option>6</option>
           <option>7</option>
-        </select>
+        </select></div>
+        
+        
       </div>
       <div class="sections-inputs">
-        <label for="child">Children</label>
-        <select id="child" name="number_child" required>
+        <div><label for="room">Rooms</label></div>
+        <div><select id="room" required name="number_room">
           <option>1</option>
           <option>2</option>
           <option>3</option>
@@ -108,24 +125,19 @@
           <option>5</option>
           <option>6</option>
           <option>7</option>
-        </select>
+        </select></div>
+        
+        
       </div>
       <div class="sections-inputs">
-        <label for="room">Rooms</label>
-        <select id="room" required name="number_room">
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
-          <option>6</option>
-          <option>7</option>
-        </select>
+        <div><label for="email_bk">Email</label></div>
+        <div><input type="email" name="email_book" id="email_bk" required></div>
       </div>
       <div class="sections-inputs">
-        <label for="sub">Get Discount</label>
-        <button type="submit" id="sub">Check Now</button>
-    </div>
+        <div><label for="sub">Get Discount</label></div>
+        <div><button type="submit" id="sub">Check Now</button></div>
+        
+      </div>
     </form>
   </div>
   <div class="room" id="room">
